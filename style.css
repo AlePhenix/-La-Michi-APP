@@ -1,0 +1,15 @@
+*{
+    font-family: monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#refreshButton {
+    padding: 20px 40px;
+    background-color: lightseagreen;
+    color: white;
+};
+#refreshButton:hover {
+    background-color: rgb(26, 152, 146);
+};
