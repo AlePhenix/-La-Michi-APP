@@ -5,33 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Random Dogs</title>
+    
 </head>
 <body>
     <h1>Michis APP</h1>
     <span id="error"></span>
     <button id="refreshButton"> Recargar Imagen</button>
-
+    
     <section id="randomMichis">
         <h2>Random Michis IMGs </h2>
-
-        <!-- <article>
-            <img id="catImg1" width="150px" alt="Random cat image">
-            <button class="btnFav">Guardar michi en favoritos</button>
-        </article>
-        <article>
-            <img id="catImg2" width="150px" alt="Random cat image">
-            <button class="btnFav">Guardar michi en favoritos</button>
-        </article>
-        <article>
-            <img id="catImg3" width="150px" alt="Random cat image">
-            <button class="btnFav">Guardar michi en favoritos</button>
-        </article> -->
-
+        
     </section>
-    <section id="favoriteMicis">
+    <section id="uploadingMichi">
+        <h2>Sube la foto de tu michi</h2>
+        <form id="uploadingForm" action="">
+            <input id="fileInput" accept="image/*" onchange="previewImage(event)"  type="file" name="file">
+            <img id="imagePreview" src="#" alt="Preview de la imagen">
+            <button type="button" onclick="uploadMichiPhoto()">Subir foto del michi</button>
+        </form>
+    </section>
+    <section id="favoriteMichis">
         <h2>Favorite Michis</h2>
     </section>
-
+    
     <script src="./function.js"></script>
 </body>
 </html>

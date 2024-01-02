@@ -13,3 +13,13 @@ body{
 #refreshButton:hover {
     background-color: rgb(26, 152, 146);
 };
+
+.random_michis_imgs {
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
